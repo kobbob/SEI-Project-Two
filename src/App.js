@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavbarPage from './components/NavbarPage'
 import LandingPage from './components/LandingPage'
 import MovieIndex from './components/MovieIndex'
+import ShowMovie from './components/ShowMovie'
 
 
 
@@ -28,7 +29,7 @@ const App = () => {
         {/* movie index */}
         <Route path='/movies' element={<MovieIndex />} />
         {/* show movie */}
-        <Route />
+        <Route path='/movies/:movie' element={<ShowMovie />} />
       </Routes>
     </BrowserRouter>
 
