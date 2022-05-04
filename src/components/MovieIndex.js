@@ -15,7 +15,7 @@ const MovieIndex = () => {
 
   const getRandWow = async () => {
     try {
-      const { data } = await axios.get('https://owen-wilson-wow-api.herokuapp.com/wows/randm')
+      const { data } = await axios.get('https://owen-wilson-wow-api.herokuapp.com/wows/random')
       setRandWow(data)
 
     } catch (error) {
@@ -50,8 +50,9 @@ const MovieIndex = () => {
     getRandWow()
   }
 
-  const bg = useColorModeValue('gray.200', 'gray.600')
+  const bg = useColorModeValue('gray.100', 'gray.600')
   const bdr = useColorModeValue('gray.300', 'gray.500')
+  
   return (
     <>
       <Container maxW='900px' mt='50px'>
@@ -63,7 +64,7 @@ const MovieIndex = () => {
               <Box p={5} pb={0}>
               <AspectRatio ratio={16 / 9}>
                 <iframe title={randWow[0].movie}
-                  src='https://videos.ctfassets.net/bs8ntwkklfua/7spLWmHyAUz0TN8oNsAf5/a4d0739d07b8c511f5e59949bc0ccb1c/Bottle_Rocket_Wow_1_1080p.mp4'
+                  src={randWow[0].video['1080p']}
                   width='100%'
                   height='100%'
                 ></iframe>
