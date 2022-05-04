@@ -6,10 +6,13 @@ const LandingPage = () => {
 
 
   return (
-    <Container>
-      <Link to='/movies'>
-        <Image src={owenHead} alt='Owen Wilson' />
-      </Link>
+    <Container className='wrapper'>
+      
+        <Image className='img' src={owenHead} alt='Owen Wilson' />
+        <div className="middle">
+          <Link to='/movies' className="text">Click me!</Link>
+        </div>
+      
     </Container>
   )
 }
