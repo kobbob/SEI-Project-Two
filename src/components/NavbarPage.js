@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
+
+//chakra
 import { Flex, Button, HStack, chakra, useColorMode, Image, useColorModeValue } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+
+//images
 import owenHead from './images/owenHead.webp'
 import title from './images/Title.png'
 
