@@ -1,8 +1,13 @@
-import Slider from "react-slick";
-import { Container, Box, Text, SimpleGrid } from '@chakra-ui/react'
-import OwenFace from './images/OwenFace.webp'
-import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
+
+//Chakra
+import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
+import { Container, Box, Text, SimpleGrid } from '@chakra-ui/react'
+//Carousel
+import Slider from 'react-slick'
 
 const ShowMovie = () => {
 
@@ -14,8 +19,8 @@ const ShowMovie = () => {
     nextArrow: <ArrowForwardIcon w={6} h={6} _hover={{color: "teal"}}/>,
     prevArrow: <ArrowBackIcon w={6} h={6} _hover={{color: "teal"}}/>,
   }
-
-
+  const { movie } = useParams()
+  console.log(movie)
 
   return (
 
@@ -23,13 +28,13 @@ const ShowMovie = () => {
       <SimpleGrid columns={{ sm: 1, md: 2 }} spacing='20px'>
         <Slider {...settings}>
           <div>
-           <img src={OwenFace} alt="" />
+           <img src='' alt="" />
           </div>
           <div>
-          <img src={OwenFace} alt="" />
+          <img src='' alt="" />
           </div>
         </Slider>
-        <Box bg='gray.300' pl={3} pr={3}>
+        <Box bg='gray.300' pl={3} pr={3} ml={3}>
           {/* info */}
           <Text fontSize='4xl'>
             Title Year

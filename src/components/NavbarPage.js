@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
-import { Flex, Button, HStack, chakra } from '@chakra-ui/react'
-
+import { Flex, Button, HStack, chakra, useColorMode } from '@chakra-ui/react'
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 
 const NavbarPage = () => {
+  const { colorMode, toggleColorMode } = useColorMode()
+
   return (
     <>
       <chakra.header id="header" bg='gray.300'>
@@ -14,22 +16,24 @@ const NavbarPage = () => {
           align="center"
           justify="space-between"
         >
-       {/* // Logo */}
-          <Link to=''>🍿</Link>
+          {/* // Logo */}
+          <Link to='/'>🍿</Link>
 
-  {/* // Nav Items */}
+          {/* // Nav Items */}
           <HStack as="nav" spacing="5">
 
-            
-              <Button variant="nav"> item 1 </Button>
-              <Button variant="nav"> item 2 </Button>
-            
+
+            <Button variant="nav"> item 1 </Button>
+            <Button variant="nav"> item 2 </Button>
+
 
           </HStack>
-{/* // Call to action items */}
+          {/* // Call to action items */}
           <HStack>
-            <Button>
-              Hello
+            <Button onClick={toggleColorMode}>
+             {colorMode === 'dark' ? 
+             <SunIcon/> :
+             <MoonIcon/>}
             </Button>
           </HStack>
 

@@ -1,18 +1,16 @@
-import { Image, Box } from '@chakra-ui/react'
-import OwenFace from './images/OwenFace.webp'
+import { Image, Container } from '@chakra-ui/react'
+import owenHead from './images/owenHead.webp'
 import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
-  
+
 
   return (
-    <div className="wrapper">
-    <Box boxSize='sm'>
+    <Container>
       <Link to='/movies'>
-        <Image src={OwenFace} alt='Owen Wilson' />
+        <Image src={owenHead} alt='Owen Wilson' />
       </Link>
-    </Box>
-    </div>
+    </Container>
   )
 }
 
