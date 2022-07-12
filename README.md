@@ -1,2 +1,2 @@
-# SEI-Project-Two
-Owen Wowsen
+# GA SEI-Project-Two: "Reacathon" 
+
