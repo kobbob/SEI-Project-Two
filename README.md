@@ -1,2 +1,2 @@
-# GA SEI-Project-Two: "Reacathon" 
+# GA Project 2: "Reacathon" 
 
