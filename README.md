@@ -74,7 +74,7 @@ Here we imported the useState Hook to call inside a function component and add s
 
 The ‘randWow’ state is set to retrieve random ‘wow’s’ (objects) from the API. This was set with an objective of false to check whether the wow is random or not. We used this function within a function by linking an onClick function to our requested data. As we wanted to access specific movie ‘wow videos’ when the user clicked on a movie poster, we had to retrieve a random wow (object) but that also linked to the specific movie title. In addition, we added a feature to the bottom of this function where on the onClick, the browser is told to scroll to the top of the webpage where the video display port is featured in order to showcase the result. 
 
-```
+```javascript 
 const [randWow, setRandWow] = useState(false)
 
  const handleMovieClick = (item) => {
@@ -98,7 +98,7 @@ const [randWow, setRandWow] = useState(false)
 ### Using the Effect Hook
 Furthermore, the ‘wows’ and ‘filteredWows’ were arrays created to avoid duplicated objects being displayed. Since there could be between 1-6 objects of ‘wow’s within one film, each being displayed as their own object, the result would be multiple film posters of the same film shown in our movie index grid. We used this function to create a filteredArray which included only the first instance of a ‘wow’ within each movie. “current_wow_in_movie” is a key within each object, and every movie had at least one value which we could draw from. 
 
-```  
+```javascript  
 const [wows, setWows] = useState([])
 const [filteredWows, setFilteredWows] = useState([]) 
 
@@ -115,7 +115,7 @@ By using Chakra UI, we found we could design the app mobile-first with seamless 
 
 In our JSX for our main page, we call on state ‘randWow’ at the top of the function and check to see if the data returned is random and works, and if it is, to display the subsequent data (see code in [MovieIndex.js](https://github.com/kobbob/SEI-Project-Two/blob/main/src/components/MovieIndex.js)).  
 
-```
+```javascript
  return (
    <>
      <Container maxW='900px' mt='50px'>
