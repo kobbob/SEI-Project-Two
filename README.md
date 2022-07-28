@@ -64,4 +64,55 @@ In our initial wireframe, we had a number of pages the user could explore throug
 
 ## Build Approach
 
+# Coding
+On this occasion we decided to create a repo on one account and fork down on the other. We would work through the code and challenges together via Zoom and on reflection, we found this method allowed us to work more efficiently in the time given. 
 
+To make requests to the public API we used axios and assigned the chosen data to variables using the React useState and setState hooks. The API used was fairly manageable to digest, with 0-29 objects within one array. There were twelve films within this array and each instance of ‘wow’ mentioned accounted for one object (and therefore certain films accounting for more than one ‘wow’).
+
+# Using the State Hook
+Here we imported the useState Hook to call inside a function component and add some local state (from our public API) to it. 
+
+The ‘randWow’ state is set to retrieve random ‘wow’s’ (objects) from the API. This was set with an objective of false to check whether the wow is random or not. We used this function within a function by linking an onClick function to our requested data. As we wanted to access specific movie ‘wow videos’ when the user clicked on a movie poster, we had to retrieve a random wow (object) but that also linked to the specific movie title. In addition, we added a feature to the bottom of this function where on the onClick, the browser is told to scroll to the top of the webpage where the video display port is featured in order to showcase the result. 
+
+*Insert Code*
+
+# Using the Effect Hook
+Furthermore, the ‘wows’ and ‘filteredWows’ were arrays created to avoid duplicated objects being displayed. Since there could be between 1-6 objects of ‘wow’s within one film, each being displayed as their own object, the result would be multiple film posters of the same film shown in our movie index grid. We used this function to create a filteredArray which included only the first instance of a ‘wow’ within each movie. “current_wow_in_movie” is a key within each object, and every movie had at least one value which we could draw from. 
+
+*Insert Code*
+
+# Styling
+By using Chakra UI, we found we could design the app mobile-first with seamless transitions even on a responsive desktop screen. 
+
+In our JSX for our main page, we call on state ‘randWow’ at the top of the function and check to see if the data returned is random and works, and if it is, to display the subsequent data (see code).  
+
+*Insert Code*
+
+By using Chakra, the JSX is amended to incorporate Chakra code: 
+<Box> is the equivalent to a <div>. 
+<AspectRatio> is a format taken to display a video. Here we access [0] part of the array which randomly reactivates each time we click the next video request.  
+We can create styling with chakra by writing code in-line. 
+
+## Challenges
+Probably our biggest challenge was learning how to use Chakra for the first time. We felt that although it had some useful components, there were some features that took longer than expected to adopt and understand how to integrate with our code. 
+ 
+## Wins
+We understood the value of CSS frameworks and how useful they can be in creating a smart, functional app in a short period of time. We were particularly happy with our light and dark mode compatibility and chosen colour scheme (which tied in with our Owen Wilson feature sticker on the landing page). We were also happy with the source used for our banner title, [Font Meme](https://fontmeme.com/).
+ 
+## Key Learnings
+This was our first instance of pair programming and building a React app. Some key takeaways were: 
+  * Using React components and being able to organise and structure our code into   
+    different files that can be easily hooked up together. 
+  * Gaining experience using a CSS framework for the first time and how this can aid 
+    your design process and efficiency. 
+  * Understanding the potential of public APIs and how creative an end product can be. 
+
+ 
+## Future Improvements
+Another design feature could be moving between the film clips via forward and backward arrows, rather than generating a random movie from one button. 
+ 
+## Credits
+  * API: [The Owen Wilson WoW API](https://owen-wilson-wow-api.herokuapp.com/).
+  * Images: Landing Page “WoW” illustration - [TEEPUBLIC](https://www.teepublic.com/fr/autocollant/3323395-owen-wilson-wow).
+  * Font: Customised via [Font Meme](https://fontmeme.com/).
+ 
