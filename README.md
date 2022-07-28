@@ -1,4 +1,4 @@
-# GA Project 2: "Reacathon" || 'Owen Wowsen Bible'
+# GA Project 2: "Reacathon" / 'Owen Wowsen Bible'
 
 ## Overview
 The second project for the General Assembly Software Engineering Immersive course was a 28-36 hour pair programming Hackathon. I was paired with my peer Rob, AKA [greezyBob](https://github.com/greezyBob), to collaborate on a plan, wireframe and complete our first app as a group. 
