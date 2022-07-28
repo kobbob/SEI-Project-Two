@@ -51,12 +51,12 @@ Installation Instructions for dependencies: [Package Manager](https://github.com
 
 ## General Approach
 
-# Planning
+### Planning
 Whilst exploring public API’s online, we came up with a number of suitable suggestions to pitch to one another, whilst utilising Insomnia to dig down into the data and see if the API could be used appropriately in the time frame. We also had to be conscious of any APIs with a strict rate limit for requests. 
 
 During this planning process, I also began saving inspiration imagery for styling certain elements and developing an overarching theme. Due to the allocated time however, we decided to keep it simple and clean, opting for the CSS framework ‘Chakra UI’ which enabled us to make use of prebuilt components.
 
-# Wireframing
+### Wireframing
 In our initial wireframe, we had a number of pages the user could explore through. We quickly found that the app didn’t need this depth of navigation, and it became more effective to keep the content on one page. 
 
 ![Initial Wireframe](./src/components/images/Wireframe.png)
@@ -64,24 +64,24 @@ In our initial wireframe, we had a number of pages the user could explore throug
 
 ## Build Approach
 
-# Coding
+### Coding
 On this occasion we decided to create a repo on one account and fork down on the other. We would work through the code and challenges together via Zoom and on reflection, we found this method allowed us to work more efficiently in the time given. 
 
 To make requests to the public API we used axios and assigned the chosen data to variables using the React useState and setState hooks. The API used was fairly manageable to digest, with 0-29 objects within one array. There were twelve films within this array and each instance of ‘wow’ mentioned accounted for one object (and therefore certain films accounting for more than one ‘wow’).
 
-# Using the State Hook
+### Using the State Hook
 Here we imported the useState Hook to call inside a function component and add some local state (from our public API) to it. 
 
 The ‘randWow’ state is set to retrieve random ‘wow’s’ (objects) from the API. This was set with an objective of false to check whether the wow is random or not. We used this function within a function by linking an onClick function to our requested data. As we wanted to access specific movie ‘wow videos’ when the user clicked on a movie poster, we had to retrieve a random wow (object) but that also linked to the specific movie title. In addition, we added a feature to the bottom of this function where on the onClick, the browser is told to scroll to the top of the webpage where the video display port is featured in order to showcase the result. 
 
 *Insert Code*
 
-# Using the Effect Hook
+### Using the Effect Hook
 Furthermore, the ‘wows’ and ‘filteredWows’ were arrays created to avoid duplicated objects being displayed. Since there could be between 1-6 objects of ‘wow’s within one film, each being displayed as their own object, the result would be multiple film posters of the same film shown in our movie index grid. We used this function to create a filteredArray which included only the first instance of a ‘wow’ within each movie. “current_wow_in_movie” is a key within each object, and every movie had at least one value which we could draw from. 
 
 *Insert Code*
 
-# Styling
+### Styling
 By using Chakra UI, we found we could design the app mobile-first with seamless transitions even on a responsive desktop screen. 
 
 In our JSX for our main page, we call on state ‘randWow’ at the top of the function and check to see if the data returned is random and works, and if it is, to display the subsequent data (see code).  
