@@ -59,7 +59,7 @@ During this planning process, I also began saving inspiration imagery for stylin
 ### Wireframing
 In our initial wireframe, we had a number of pages the user could explore through. We quickly found that the app didn’t need this depth of navigation, and it became more effective to keep the content on one page. 
 
-![Initial Wireframe](./src/components/images/Wireframe.png)
+<img src="./src/components/images/Wireframe.png" height=400>
 
 
 ## Build Approach
