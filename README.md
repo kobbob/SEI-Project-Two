@@ -15,7 +15,7 @@ To explore this project, you can find the deployed app via Netlify [here](https:
 ## Navigation
 
 * [The App](#the-app)
-* [Brief](#brief)
+* [The Brief](#the-brief)
 * [Technologies Used](#technologies-used)
 * [General Approach](#general-approach)
   * [Planning](#planning)
