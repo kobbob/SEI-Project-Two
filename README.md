@@ -1,9 +1,13 @@
-# GA Project 2: "Reacathon" / 'Owen Wowsen Bible'
+![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
+# GA Project 2: "Owen Wowsen Bible"
+
 
 ## Overview
-The second project for the General Assembly Software Engineering Immersive course was a 28-36 hour pair programming Hackathon. I was paired with my peer Rob, AKA [greezyBob](https://github.com/greezyBob), to collaborate on a plan, wireframe and complete our first app as a group. 
+The second project for the General Assembly Software Engineering Immersive course was a 28-36 hour pair programming Hackathon. I was paired with my peer Rob, AKA [greezyBob](https://github.com/greezyBob), to collaborate on a plan, wireframe and complete our first app in a pair. 
 
-We found a public API which highlights the number of “Wow’s” mentioned by Owen Wilson (the actor) in twelve of his featured films. 
+We found a public API online which highlights the number of “Wow’s” mentioned by Owen Wilson (the actor) in twelve of his featured films. 
+
+<img src="https://media.giphy.com/media/udmx3pgdiD7tm/giphy.gif" width="350">
 
 To explore this project, you can find the deployed app via Netlify [here](https://the-great-greezybob-site.netlify.app/).
 
@@ -21,6 +25,7 @@ To explore this project, you can find the deployed app via Netlify [here](https:
   * [Using the State Hook](#using-the-state-hook)
   * [Using the Effect Hook](#using-the-effect-hook)
   * [Styling](#styling)
+* [Demo](#demo)
 * [Challenges](#challenges)
 * [Wins](#wins)
 * [Key Learnings](#key-learnings)
@@ -33,19 +38,26 @@ To explore this project, you can find the deployed app via Netlify [here](https:
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | <img src="./src/components/images/Dark-mode-homepage.png" width=350 height=200>  | <img src="./src/components/images/Mainpage-1.png" width=350 height=200>  | <img src="./src/components/images/Mainpage-2.png" width=350 height=200>  |
 
+[Demo](#demo)
 
-https://user-images.githubusercontent.com/103049670/181481388-1fe723c8-eb10-49e4-917a-53688c5258ee.mp4
 
-
-## Brief
+## The Brief
+* Complete your first "Reacathon" (AKA a 2-day hackathon). 
 * Consume a public API. 
 * Use React to build the application with several components. 
 * Plan your project with a wireframe. 
 * Time: < 36 hours. 
 
 ## Technologies Used
-*Insert icons*
-JavaScript (ES6+) || React & React Router || HTML5 & CSS3 || Chakra UI || Axios || VSCode || Eslint || Git & GitHub || Insomnia || [The Owen Wilson WoW API](https://owen-wilson-wow-api.herokuapp.com/)
+ * JavaScript (ES6+)
+ * HTML5/CSS3
+ * React.js
+ * Chakra UI
+ * Open API - [The Owen Wilson WoW API](https://owen-wilson-wow-api.herokuapp.com/)
+ * Axios
+ * Visual Studio Code & ESlint
+ * Git & GitHub
+ * Insomnia
 
 Installation Instructions for dependencies: [Package Manager](https://github.com/kobbob/SEI-Project-Two/blob/main/package.json) 
 
@@ -65,7 +77,7 @@ In our initial wireframe, we had a number of pages the user could explore throug
 ## Build Approach
 
 ### Coding
-On this occasion we decided to create a repo on one account and fork down on the other. We would work through the code and challenges together via Zoom and on reflection, we found this method allowed us to work more efficiently in the time given. 
+We decided to create a repo on one account and fork down on the other. We worked through the code and challenges together via Zoom and we found this method allowed us to work more efficiently in the time given. 
 
 To make requests to the public API we used axios and assigned the chosen data to variables using the React useState and setState hooks. The API used was fairly manageable to digest, with 0-29 objects within one array. There were twelve films within this array and each instance of ‘wow’ mentioned accounted for one object (and therefore certain films accounting for more than one ‘wow’).
 
@@ -128,6 +140,9 @@ By using Chakra, the JSX is amended to incorporate Chakra code:
 <Box> is the equivalent to a <div>. 
 <AspectRatio> is a format taken to display a video. Here we access [0] part of the array which randomly reactivates each time we click the next video request.  
 We can create styling with chakra by writing code in-line. 
+
+## Demo
+https://user-images.githubusercontent.com/103049670/181481388-1fe723c8-eb10-49e4-917a-53688c5258ee.mp4 
 
 ## Challenges
 Probably our biggest challenge was learning how to use Chakra for the first time. We felt that although it had some useful components, there were some features that took longer than expected to adopt and understand how to integrate with our code. 
