@@ -1,9 +1,9 @@
 ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
-# GA Project 2: "Owen Wowsen Bible"
+# GA Project 2: 'Owen Wowsen Bible'
 
 
 ## Overview
-The second project for the General Assembly Software Engineering Immersive course was a 28-36 hour pair programming Hackathon. I was paired with my peer Rob, AKA [greezyBob](https://github.com/greezyBob), to collaborate on a plan, wireframe and complete our first app in a pair. 
+My second project during the General Assembly Software Engineering Immersive course was a 28-36 hour pair programming Hackathon. I was paired with my peer Rob, AKA [greezyBob](https://github.com/greezyBob), to collaborate on a plan, wireframe and complete our first app in a pair. 
 
 We found a public API online which highlights the number of “Wow’s” mentioned by Owen Wilson (the actor) in twelve of his featured films. 
 
