@@ -9,7 +9,7 @@ We found a public API online which highlights the number of “Wow’s” mentio
 
 <img src="https://media.giphy.com/media/udmx3pgdiD7tm/giphy.gif" width="350">
 
-To explore this project, you can find the deployed app via Netlify [here](https://the-great-greezybob-site.netlify.app/).
+To explore this project, you can find the deployed app via Netlify [here](https://the-great-greezybob-site.netlify.app/) or jump to the [Demo](#demo) section to see the app in action!
 
 
 ## Navigation
